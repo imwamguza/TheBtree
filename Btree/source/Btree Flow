@@ -1,0 +1,10 @@
+#include <btree_a.h>
+
+long id = 13;
+
+btree_a t;
+bool btree_create(&t, "first_name", 32, Char, true);
+
+btree_insert(&t, "My Name", id);
+btree_remove(&t, "My Name", id);
+setlocal set_a* btree_search(&t, "My Name", id);
